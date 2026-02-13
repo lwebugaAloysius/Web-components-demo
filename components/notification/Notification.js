@@ -23,7 +23,7 @@ export class Notification extends HTMLElement {
     };
 
     this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="/components/notification/Notification.css">
+        <link rel="stylesheet" href="./components/notification/Notification.css">
 
         <div class="card-container" data-type=${type}>
             <div class="card-info-container">
@@ -58,3 +58,4 @@ export class Notification extends HTMLElement {
     });
   }
 }
+
