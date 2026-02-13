@@ -33,7 +33,7 @@ export class UserCard extends HTMLElement {
     let imgLink = this.getAttribute("img");
 
     this.shadowRoot.innerHTML = `
-            <link rel="stylesheet" href="/components/user-card/UserCard.css" />
+            <link rel="stylesheet" href="./components/user-card/UserCard.css" />
 
             <div class="card-container">
             <div class="avatar-img-container">
@@ -102,3 +102,4 @@ export class UserCard extends HTMLElement {
     });
   }
 }
+
