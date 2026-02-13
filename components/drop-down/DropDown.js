@@ -46,7 +46,7 @@ export class DropDown extends HTMLElement {
     let mobileCenterPoint = this.getAttribute("mobileCenterPoint") || "600px";
     let title = this.getAttribute("name") || "Drop Down";
     this.shadowRoot.innerHTML = `
-                                <link rel="stylesheet" href="/components/drop-down/DropDown.css" />
+                                <link rel="stylesheet" href="./components/drop-down/DropDown.css" />
 
                                 <style>
                                     @media (min-width:${mobileCenterPoint}) {
@@ -109,3 +109,4 @@ export class DropDownItem extends HTMLElement {
     this.render();
   }
 }
+
