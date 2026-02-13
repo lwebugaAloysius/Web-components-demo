@@ -3,11 +3,11 @@ export class UserCard extends HTMLElement {
     super();
     this.attachShadow({ mode: "open" });
     this.socialsIcons = {
-      facebook: "./images/facebook.svg",
-      github: "./images/github.svg",
-      instagram: "./images/instagram.svg",
-      linkedln: "./images/linkedin.svg",
-      youtube: "./images/youtube.svg",
+      facebook: "images/facebook.svg",
+      github: "images/github.svg",
+      instagram: "images/instagram.svg",
+      linkedln: "images/linkedin.svg",
+      youtube: "images/youtube.svg",
     };
   }
 
@@ -102,5 +102,6 @@ export class UserCard extends HTMLElement {
     });
   }
 }
+
 
 
