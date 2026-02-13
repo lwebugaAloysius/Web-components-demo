@@ -1,7 +1,7 @@
-import { Notification } from "/components/notification/Notification.js";
-import { UserCard } from "/components/user-card/UserCard.js";
-import { DropDown } from "/components/drop-down/DropDown.js";
-import { DropDownItem } from "/components/drop-down/DropDown.js";
+import { Notification } from "./components/notification/Notification.js";
+import { UserCard } from "./components/user-card/UserCard.js";
+import { DropDown } from "./components/drop-down/DropDown.js";
+import { DropDownItem } from "./components/drop-down/DropDown.js";
 
 // ---------------------------------------------------------------------------------------------------------------------------
 window.customElements.define("notify-card", Notification);
@@ -61,3 +61,4 @@ window.customElements.define("drop-item", DropDownItem);
 //     localStorage.setItem("btnBodyState", "closed");
 //   }
 // });
+
