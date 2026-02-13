@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Componets</title>
+  </head>
+  <body class="wrapper">
+    <h1>THESE ARE ALL CUSTOM WEB COMPONETS...</h1>
+    <p class="article-text">
+      Web Components are a set of standard browser technologies that let you
+      create reusable, encapsulated custom HTML elements with their own
+      structure, style, and behavior. They are built using four main features:
+      Custom Elements (to define new HTML tags), Shadow DOM (to encapsulate
+      markup and styles so they don’t leak in or out), HTML Templates (to define
+      reusable chunks of markup), and ES Modules (to organize and reuse
+      JavaScript). Together, these allow developers to build self-contained
+      components that work across projects and frameworks without relying on
+      external libraries. Below are 3 componets i made ,
+    </p>
+
+    <h2>Below is a responsive drop down web component</h2>
+    <div class="nav">
+      <drop-down
+        name="Product"
+        dropDownId="123"
+        mobileCenter="true"
+        mobileCenterPoint="600px"
+      >
+        <drop-item><a href="#" class="drop-item">Overview</a></drop-item>
+        <drop-item><a href="#" class="drop-item">Pricing</a></drop-item>
+        <drop-item><a href="#" class="drop-item">Marketplace</a></drop-item>
+        <drop-item><a href="#" class="drop-item">Features</a></drop-item>
+        <drop-item><a href="#" class="drop-item">Intergrations</a></drop-item>
+      </drop-down>
+
+      <drop-down
+        name="Company"
+        dropDownId="678"
+        mobileCenter="true"
+        mobileCenterPoint="600px"
+      >
+        <drop-item><a href="#" class="drop-item">About</a></drop-item>
+        <drop-item><a href="#" class="drop-item">Team</a></drop-item>
+        <drop-item><a href="#" class="drop-item">Blog</a></drop-item>
+        <drop-item><a href="#" class="drop-item">Careers</a></drop-item>
+      </drop-down>
+
+      <drop-down
+        name="Connect"
+        dropDownId="302"
+        mobileCenter="true"
+        mobileCenterPoint="600px"
+      >
+        <drop-item><a href="#" class="drop-item">Contact</a></drop-item>
+        <drop-item><a href="#" class="drop-item">NewsLetter</a></drop-item>
+        <drop-item>
+          <drop-down
+            name="Socials"
+            dropDownId="44689"
+            mobileCenter="true"
+            mobileCenterPoint="600px"
+          >
+            <drop-item><a href="#" class="drop-item">Youtube</a></drop-item>
+            <drop-item><a href="#" class="drop-item">LinkedIn</a></drop-item>
+            <drop-item><a href="#" class="drop-item">Instagram</a></drop-item>
+            <drop-item><a href="#" class="drop-item">Facebook</a></drop-item>
+          </drop-down>
+        </drop-item>
+        <drop-item><a href="#">Gmail</a></drop-item>
+      </drop-down>
+    </div>
+
+    <h2>Below is a notification card down web component.</h2>
+    <p class="more-info">The cards are not responsive</p>
+
+    <notify-card
+      type="success"
+      content="Your download is completed"
+      class="notification-card"
+    ></notify-card>
+
+    <notify-card
+      type="error"
+      content="Internal Server error"
+      class="notification-card"
+    ></notify-card>
+
+    <notify-card
+      type="warning"
+      content="User has to be admin"
+      class="notification-card"
+    ></notify-card>
+
+    <notify-card
+      type="info"
+      content="User pending action"
+      class="notification-card"
+    ></notify-card>
+
+    <notify-card
+      type="error"
+      content="User input is invalid"
+      class="notification-card"
+    ></notify-card>
+
+    <h2>
+      Below is a user card web component with dynamic social icon rendering
+    </h2>
+    <section class="user-cards-container">
+      <user-card
+        class="user-card"
+        name="Richard Green"
+        carrer="UX designer"
+        summary="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, soluta quasi. Aperiam dolores animi, tempora commodi ratione unde quo. Distinctio, itaque ipsa aspernatur et quas animi dolorum laboriosam beatae rem aut magni est. Commodi quaerat voluptatibus consectetur consequuntur ducimus id."
+        socials='{
+            "instagram":"#",
+            "linkedln":"#"
+        }'
+        email="richardgreen@yahoo.com"
+        resume="/assets/richard-cv.pdf"
+        img="images/avatar-richard.png"
+      ></user-card>
+
+      <user-card
+        class="user-card"
+        name="Ali Kimbley"
+        carrer="Software Developer"
+        summary="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, soluta quasi. Aperiam dolores animi, tempora commodi ratione unde quo. Distinctio, itaque ipsa aspernatur et quas animi dolorum laboriosam beatae rem aut magni est. Commodi quaerat voluptatibus consectetur consequuntur ducimus id."
+        socials='{
+            "instagram":"#",
+            "linkedln":"#",
+            "youtube":"#",
+            "github":"#"
+        }'
+        email="alikimbley@gmail.com"
+        resume="/assets/ali-cv.pdf"
+        img="images/avatar-ali.png"
+      ></user-card>
+      <user-card
+        class="user-card"
+        name="Shanai Mercy"
+        carrer="Virtual Assistant"
+        summary="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, soluta quasi. Aperiam dolores animi, tempora commodi ratione unde quo. Distinctio, itaque ipsa aspernatur et quas animi dolorum laboriosam beatae rem aut magni est. Commodi quaerat voluptatibus consectetur consequuntur ducimus id."
+        socials='{
+            "linkedln":"#",
+            "instagram":"#",
+            "youtube":"#"
+        }'
+        email="shanaimercy@gmail.com"
+        resume="/assets/shanai.pdf"
+        img="images/avatar-shanai.png"
+      ></user-card>
+
+      <user-card
+        class="user-card"
+        name="Anisha Wong"
+        carrer="Social Media Manager"
+        summary="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, soluta quasi. Aperiam dolores animi, tempora commodi ratione unde quo. Distinctio, itaque ipsa aspernatur et quas animi dolorum laboriosam beatae rem aut magni est. Commodi quaerat voluptatibus consectetur consequuntur ducimus id."
+        socials='{
+            "linkedln":"#",
+            "instagram":"#",
+            "youtube":"#",
+            "facebook":"#"
+        }'
+        email="anishawongmin@gmail.com"
+        resume="/assets/anisha.pdf"
+        img="images/avatar-anisha.png"
+      ></user-card>
+    </section>
+  </body>
+</html>
